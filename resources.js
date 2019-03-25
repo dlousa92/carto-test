@@ -13,8 +13,8 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{
 
 // Carto Client
 const client = new carto.Client({
-    apiKey: 'mD10r-6LswdS8b98KvQcHg',
-    username: 'csis'
+    apiKey: 'EtLRHbw7jMxZGD1T_XSUQA',
+    username: 'pfranz@csis.org'
 })
 
 // Defining Layers
@@ -55,3 +55,6 @@ const populatedPlacesStyle = new carto.style.CartoCSS(`
 const populatedPlaces = new carto.layer.Layer(populatedPlacesSource, populatedPlacesStyle, {
     featureOverColumns: ['name']
 })
+
+// Adding layers to the client
+client.addLayers([europeanCountries, populatedPlaces])
