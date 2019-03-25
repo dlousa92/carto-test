@@ -10,3 +10,9 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{
     maxZoom: 18,
     zIndex: 10
 }),addTo(map)
+
+// Carto Client
+const client = new CaretPosition.Client({
+    apiKey: 'mD10r-6LswdS8b98KvQcHg',
+    username: 'csis'
+})
